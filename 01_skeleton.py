@@ -13,7 +13,7 @@ class Start:
         self.capital_label.grid(row=0)
 
         # to_game button row 1
-        self.play_button = Button(text="Play", command=lambda: self.to_game(1))
+        self.play_button = Button(text="Play", command=lambda: self.to_game(0))
         self.play_button.grid(row=1)
 
     def to_game(self, difficulty):

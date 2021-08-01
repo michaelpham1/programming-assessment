@@ -33,7 +33,7 @@ class Start:
 
         # to_game button row 2.0
         self.play_button = Button(self.to_game_frame, text="play", font=button_font, bg="#00FF00",
-                                  command=lambda: self.to_game(1), height=1, width=10, borderwidth=2)
+                                  command=lambda: self.to_game(0), height=1, width=10, borderwidth=2)
         self.play_button.grid(row=0, column=0, padx=10, pady=5)
 
         # Help Button row 3

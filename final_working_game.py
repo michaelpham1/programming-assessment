@@ -82,11 +82,13 @@ class Start:
                         Game(self)
                         self.start_box.destroy()
                 else:
-                    self.round_warning.config(bg="red", text="You may enter a number or leave it blank", fg="#FFFFFF")
+                    self.round_warning.config(bg="red", text="You may enter a positive integer or leave it blank",
+                                              fg="#FFFFFF")
                     self.round_entry.delete(0, "end")
             except ValueError:
-                self.round_warning.config(bg="red",text="You may enter a number or leave it blank",fg="#FFFFFF")
-                self.round_entry.delete(0,"end")
+                self.round_warning.config(bg="red",text="You may enter a positive integer or leave it blank",
+                                          fg="#FFFFFF")
+                self.round_entry.delete(0, "end")
 
 
     def help(self):
